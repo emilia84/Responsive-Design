@@ -1,0 +1,188 @@
+/* Mobile styles (max-width: 480px)*/
+@media only screen and (max-width: 480px) {
+    header{
+        text-align: center;
+    }
+    .nav{
+        text-align: center;
+        font-weight: bold;
+        padding: 3%;
+    }
+    .nav>div{
+        padding: 3%;
+    }
+    .name{
+        font-size: large;
+    }
+    .profile-image{
+        width: 75%;
+    }
+    #introduction{
+        margin-bottom:7%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .nav2{
+        display:flex;
+        justify-content: space-around;
+        padding: 0;
+        margin: 0 auto;
+    }
+    .nav2>.name2{
+        display: block;
+        margin-right: auto;
+        font-size: large;
+    }
+    .nav2>div{
+        padding: 5px 10px 10px 10px;
+        font-weight: bold;
+    }
+    .nav2>.home,.portfolio, .contact2{
+        display: none;
+    }
+}
+
+/* Tablet styles (max-width: 768px) 481px – 768px */
+@media only screen and (min-width: 481px) {
+    .nav{
+        display: flex;
+        /* justify-content: center; */
+    }
+  
+    .nav .name{
+        display: block;
+        font-size: large;
+        flex: 100%;
+    }
+    .nav>div{
+        padding: 5px 10px 10px 10px;
+        font-weight: bold;
+    }
+    .intro{
+        display:flex;
+        margin-top:2%;
+        padding: 5px 10px 10px 10px;
+    }
+    .intro p{
+        display: block;
+        flex: 70%;
+        text-align: left;
+    }
+    #introduction{
+        margin-right: 3%;
+    }
+    #portfolio{
+        display:grid;
+        grid-template-areas: "marketing search"
+                            "travel       map"
+                            "photo calculator";
+        background-color: white;
+    }
+    #portfolio>.marketing{
+        grid-area: marketing;
+    }
+    #portfolio>.search{
+        grid-area: search;
+    }
+    #portfolio>.travel{
+        grid-area:travel;
+    }
+    #portfolio>.map{
+        grid-area:map;
+    }
+    #portfolio>.photo{
+        grid-area:photo;
+    }
+    #portfolio>.calculator{
+        grid-area:calculator;
+    }
+    .nav2{
+        display: flex;
+        justify-content: space-around;
+        padding: 0;
+        margin: 0 auto;
+    }
+    .nav2>.name2{
+        display: block;
+        margin-right: auto;
+        font-size: large;
+    }
+    .nav2>div{
+        padding: 5px 10px 10px 10px;
+        font-weight: bold;
+    }
+    .nav2>.back{
+        display: none;
+    }
+    .information{
+        width: 50%;
+        margin-bottom: 3%;
+        margin-right: 25%;
+        margin-left:25%;
+    }
+}
+
+/* Desktop styles (min-width: 1024px)*/
+@media only screen and (min-width: 1024px) {
+    .nav{
+        display: flex;
+        justify-content: space-around;
+        padding: 0;
+        margin: 0 auto;
+    }
+    .nav>.name{
+        display: block;
+        margin-right: auto;
+        font-size: large;
+    }
+    .nav>div{
+        padding: 5px 10px 10px 10px;
+        font-weight: bold;
+    }
+    .intro{
+        display:flex;
+        margin-top: 2%;
+        padding: 5px 10px 10px 10px;
+    }
+    .intro p{
+        display: block;
+        flex: 90%;
+        text-align: left;
+    }
+    #introduction{
+        margin-right: 3%;
+    }
+    #portfolio{
+        display:grid;
+        grid-template-areas: "marketing search travel"
+                        "map photo calculator";
+        background-color: white;
+    }
+    #portfolio>.marketing{
+        grid-area: marketing;
+    }
+    #portfolio>.search{
+        grid-area: search;
+    }
+    #portfolio>.travel{
+        grid-area:travel;
+    }
+    #portfolio>.map{
+        grid-area:map;
+    }
+    #portfolio>.photo{
+    grid-area:photo;
+    }
+    #portfolio>.calculator{
+        grid-area:calculator;
+    }
+    .nav2>.back{
+        display: none;
+    }
+    .information{
+        width: 50%;
+        margin-bottom: 3%;
+        margin-right: 25%;
+        margin-left:25%;
+    }
+}
